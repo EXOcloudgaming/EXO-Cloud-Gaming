@@ -1,0 +1,34 @@
+.main-tab {
+  -fx-alignment: left;
+  -fx-background-color: #00000000; /* transparent */
+  -fx-fill: #ffffff;
+  -fx-text-fill: #ffffff;
+  -fx-font: bold 24px sans-serif;
+}
+
+.selected-tab {
+  -fx-alignment: left;
+  -fx-background-color: #00000000; /* transparent */
+  -fx-fill: #ffffff;
+  -fx-text-fill: #ffffff;
+  -fx-font: italic bold 36px sans-serif;
+}
+
+.vertical-scroll {
+  -fx-fit-to-width: true;
+}
+
+.horizontal-scroll {
+  -fx-fit-to-height: true;
+}
+
+.scroll-pane > .viewport  {
+ -fx-background-color: transparent;
+}
+
+.game-card {
+  -fx-background-color: black;
+  -fx-background-radius: 32px;
+  -fx-pref-width: 200px;
+  -fx-pref-height: 260px;
+}

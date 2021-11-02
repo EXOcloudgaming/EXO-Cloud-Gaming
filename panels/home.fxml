@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: rgb(6.3%, 9.8%, 15.7%);" stylesheets="@../stylesheets/panels.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints minWidth="240.0" prefWidth="240.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="-Infinity" minHeight="160.0" prefHeight="160.0" vgrow="NEVER" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <ImageView fitHeight="128.0" fitWidth="196.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+         <image>
+            <Image url="@../icons/logo-big.png" />
+         </image>
+      </ImageView>
+      <VBox prefHeight="0.0" prefWidth="0.0" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="TAB_HOME" cache="true" cacheHint="SPEED" centerShape="false" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="48.0" scaleShape="false" snapToPixel="false" style="-fx-alignment: left;" styleClass="main-tab" text="Home" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="TAB_ACCOUNT" cache="true" cacheHint="SPEED" centerShape="false" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="48.0" scaleShape="false" snapToPixel="false" styleClass="main-tab" text="Account">
+               <VBox.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="TAB_BLOG" cache="true" cacheHint="SPEED" centerShape="false" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="48.0" scaleShape="false" snapToPixel="false" styleClass="main-tab" text="Blog">
+               <VBox.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="TAB_CONTACT" cache="true" cacheHint="SPEED" centerShape="false" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="48.0" scaleShape="false" snapToPixel="false" styleClass="main-tab" text="Contact">
+               <VBox.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="TAB_SETTINGS" cache="true" cacheHint="SPEED" centerShape="false" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" mnemonicParsing="false" prefHeight="48.0" scaleShape="false" snapToPixel="false" styleClass="main-tab" text="Settings">
+               <VBox.margin>
+                  <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <GridPane.margin>
+            <Insets left="32.0" />
+         </GridPane.margin>
+      </VBox>
+      <GridPane GridPane.columnIndex="1">
+        <columnConstraints>
+          <ColumnConstraints halignment="LEFT" hgrow="NEVER" minWidth="0.0" prefWidth="160.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text fx:id="SELECTED_TAB" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="selected-tab" text="Home">
+               <GridPane.margin>
+                  <Insets left="32.0" />
+               </GridPane.margin>
+            </Text>
+            <TextField alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="360.0" promptText="SEARCH" style="-fx-background-radius: 32px;" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+               <GridPane.margin>
+                  <Insets right="32.0" />
+               </GridPane.margin>
+            </TextField>
+         </children>
+      </GridPane>
+      <StackPane prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="-Infinity" minHeight="0.0" prefHeight="240.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ScrollPane pannable="true" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgb(6.3%, 9.8%, 15.7%);" styleClass="vertical-scroll" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                     <content>
+                        <TilePane hgap="16.0" prefColumns="1000" prefHeight="200.0" prefRows="1000" prefTileHeight="300.0" prefTileWidth="230.0" prefWidth="0.0" vgap="16.0">
+                           <children>
+                              <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="0.0" prefWidth="0.0" styleClass="game-card" />
+                              <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="0.0" prefWidth="0.0" styleClass="game-card" />
+                              <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="0.0" prefWidth="0.0" styleClass="game-card" />
+                              <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="0.0" prefWidth="0.0" styleClass="game-card" />
+                              <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="0.0" prefWidth="0.0" styleClass="game-card" />
+                              <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="0.0" prefWidth="0.0" styleClass="game-card" />
+                              <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="0.0" prefWidth="0.0" styleClass="game-card" />
+                              <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="0.0" prefWidth="0.0" styleClass="game-card" />
+                              <Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="0.0" prefWidth="0.0" styleClass="game-card" />
+                           </children>
+                        </TilePane>
+                     </content>
+                  </ScrollPane>
+                  <ImageView fitHeight="200.0" fitWidth="340.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="RIGHT">
+                     <image>
+                        <Image url="@../images/fortnite-epic.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" fitWidth="340.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="LEFT">
+                     <image>
+                        <Image url="@../images/valorant.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets bottom="16.0" left="16.0" right="16.0" top="16.0" />
+               </padding>
+            </GridPane>
+         </children>
+      </StackPane>
+   </children>
+</GridPane>
